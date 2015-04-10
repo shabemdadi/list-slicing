@@ -204,7 +204,8 @@ def custom_append(input_list, value):
     and return nothing
     """
 
-    input_list + [value]
+    input_list = input_list + [value]
+    return
 
 
 def custom_extend(input_list, second_list):
@@ -213,7 +214,8 @@ def custom_extend(input_list, second_list):
     list to the end of the first list and return nothing
     """
     
-    input_list + second_list
+    input_list = input_list + second_list
+    return
 
 
 def custom_insert(input_list, index, value):
@@ -222,7 +224,8 @@ def custom_insert(input_list, index, value):
     at the specified index of the input list and return nothing
     """
 
-    input_list[:index] + [value] + input_list[index:]
+    input_list = input_list[:index] + [value] + input_list[index:]
+    return
 
 
 def custom_remove(input_list, value):
